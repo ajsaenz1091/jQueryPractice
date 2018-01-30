@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+
+    $("#click-target").click(function() {
+            alert("I was clicked");
+    }); 
+
+    $("#btn1").click(function() {
+        $("p").hide();
+    });
+
+    $("#btn2").click(function() {
+        $("p").show();
+    });
+
+    $("#slide-down").click(function() {
+        $("#slide").slideDown();
+    });
+    
+    $("#slide-up").click(function() {
+        $("#slide").slideUp();
+    });
+
+    $("#slide-toggle").click(function(){
+        $("#slide-toggle-text").slideToggle("slow");
+    });
+
+    $("#fade-in").click(function() {
+        $("#fade-in-text").fadeIn(3000);
+    });
+});
+</script>
+<style>
+    .box {
+        background-color: grey;
+        width: 700px;
+        
+    }
+
+    .btn-style {
+        background-color: blue;
+        width: 300px;
+        height: 20px;
+    }
+
+    .text-style {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #slide-toggle-text {
+        display: none;
+    }
+
+    #fade-in-text {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+
+    <h1>.click()</h1>
+    <p class="text-style" id="click-target">Click here.</p>
+
+    <h1>.hide()/.show()</h1>
+    <p class="text-style" id="hide-show-target">This is a paragraph.</p>
+    <button class="btn-style" id="btn1">Hide</button>
+    <button class="btn-style" id="btn2">Show</button>
+
+    <h1>.toggle()</h1>
+    <p class="text-style" id="">This is a paragraph.</p>
+    <button class="btn-style" id="toggle-btn">Toggle between hide() and show()</button>
+
+    <h1>.slideDown()/.slideUp()</h1>
+    <p class="text-style" id="slide">This is a paragraph.</p>
+    <button class="btn-style" id="slide-down">slide down</button>
+    <button class="btn-style" id="slide-up">slide up</button>
+
+    <h1>.slideToggle()</h1>
+    <button class="btn-style" id="slide-toggle">Click to slide the panel down or up</button>
+    <p class="text-style" id="slide-toggle-text">Hello, wolrd!</p>
+
+
+    <h1>.fadeIn()</h1>
+    <button class="btn-style" id="fade-in">Fade In</button>
+    <p class="text-style" id="fade-in-text">Hello, wolrd!</p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>jQuery</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    console.log($())
+    
+    $(document).ready(function(){
+/*
+        $("#target").click(function() {
+            alert("I was clicked");
+            });  
+
+        $("#clickme").click(function() {
+            $("#hide").hide("slow")
+        })
+
+        $("button").click(function() {
+            $("p").show("slow")
+        })
+
+ */
+
+        $("botton").click(function() {
+            $("p").toggle();
+            });
+    
+    });   
+</script>
+
+</head>
+<body>
+
+
+<!--
+    <h1>.click()</h1>
+    <div id="target">Click here!</div>
+
+    <h1>.hide()</h1>
+    <div id="clickme">Click here</div>
+    <div id="hide">I will hide</div>
+
+    <h1>.show()</h1>
+    <button>Click to show</button>
+    <p style="display:none">Hello</p>  -->
+                
+    <h1>.toggle()</h1>
+    <p>This is a paragraph</p>
+    <button>Toggle between hide() and show()</button>
+
+
+</body>
+</html>
